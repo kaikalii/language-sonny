@@ -2,6 +2,12 @@
 # https://github.com/atom/language-javascript/blob/master/snippets/javascript.cson
 
 '.source.sonny':
-  'Method documentation':
+  'Chain documentation':
     'prefix': 'doc'
-    'body': '@@ ${1:method} - ${2:description}'
+    'body': '# ${1:chain} - ${2:description}'
+  'Chain':
+    'prefix:': 'chain'
+    'body': '${1:name}: ${2:expression}'
+  'Subchain':
+    'prefix:': 'sub'
+    'body': '|${1:link} -> ${2:link}|'
