@@ -3,4 +3,4 @@
 
 '.source.sonny':
   'editor':
-    'commentStart': '@@ '
+    'commentStart': '# '
