@@ -23,7 +23,7 @@
   }
   {
 	  'name': 'constant.numeric.sonny'
-	  'match': '((?<![A-Za-z_\\d!])\\d+(\\.\\d*)?(?![A-Za-z_\\d])|pi)'
+	  'match': '((?<![A-Za-z_\\d!])\\d+((?!\\.\\.)(\\.\\d*)?(?![A-Za-z_\\d]))?|pi)'
   }
   {
 	  'name': 'constant.numeric.note_duration.sonny'
@@ -55,10 +55,22 @@
   }
   {
 	  'name': 'keyword.other.word.sonny'
-	  'match': '\\b(sin|cos|ceil|floor|abs|min|max|log|avg)\\b'
+	  'match': '\\b(sin|cos|ceil|floor|abs|min|max|log|avg|fft)\\b'
   }
   {
 	  'name': 'keyword.other.top_level.sonny'
 	  'match': '\\b(std|use|out|tempo)\\b'
   }
+  {
+	  'name': 'string.quoted.double.sonny'
+	  'begin': '"'
+	  'end': '"'
+	  'patterns': [
+		  {
+			  'name': 'constant.character.escape.sonny'
+			  'match': '\\\\[A-Za-z"\\\\]'
+		  }
+	  ]
+  }
+
 ]
