@@ -34,8 +34,12 @@
 	  'match': '(?<=:)\\s*\\d+\\s*/\\s*\\d+\\s*(?=(,|}))'
   }
   {
-	  'name': 'entity.name.function.chain.sonny'
+	  'name': 'entity.name.function.chain_def.sonny'
 	  'match': '([A-Za-z_][A-Za-z_\\d]*)(?<![^A-Za-z_\\d][A-G_]\\d)(?<![^A-Za-z_\\d][A-G_])\\s*((?=:)(?!::))'
+  }
+  {
+	  'name': 'entity.name.function.chain_call.sonny'
+	  'match': '(?<=::)([A-Za-z_][A-Za-z_\\d]*)(?<![^A-Za-z_\\d][A-G_]\\d)(?<![^A-Za-z_\\d][A-G_])\\s*(?!::)'
   }
   {
 	  'name': 'support.constant.backlink.sonny'
@@ -51,7 +55,7 @@
   }
   {
 	  'name': 'keyword.operator.symbol.sonny'
-	  'match': '(\\+|-(?!>)|\\*|/|%|(=|!|<|>)=?|&&|\\|\\|)'
+	  'match': '(\\+|-(?!>)|\\*|/|%|(=|!|<|>)=?|&&|\\|\\||\\?|:|::)'
   }
   {
 	  'name': 'keyword.other.word.sonny'
