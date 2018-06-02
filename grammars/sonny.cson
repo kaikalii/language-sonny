@@ -15,7 +15,7 @@
   }
   {
 	  'name': 'constant.language.sonny'
-	  'match': '(time|sample_rate|window_size)'
+	  'match': '\\b(time|sample_rate|window_size|buffer_size|wi)\\b'
   }
   {
 	  'name': 'constant.other.note.sonny'
@@ -55,7 +55,7 @@
   }
   {
 	  'name': 'keyword.other.word.sonny'
-	  'match': '\\b(sin|cos|ceil|floor|abs|min|max|log|avg|fft)\\b'
+	  'match': '\\b(sin|cos|ceil|floor|abs|min|max|log|avg|fft|window|debug|print)\\b'
   }
   {
 	  'name': 'keyword.other.top_level.sonny'
