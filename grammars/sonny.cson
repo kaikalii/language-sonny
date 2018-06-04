@@ -59,7 +59,7 @@
   }
   {
 	  'name': 'keyword.other.word.sonny'
-	  'match': '\\b(sin|cos|ceil|floor|abs|min|max|log|avg|fft|window|debug|print)\\b'
+	  'match': '\\b(sin|cos|ceil|floor|abs|min|max|log|avg|fft|window|debug|print|cat|len|find)\\b'
   }
   {
 	  'name': 'keyword.other.top_level.sonny'
